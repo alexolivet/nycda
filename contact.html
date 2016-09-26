@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>elwebman portfolio</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <script type="text/javascript">
+  /*** Temporary text filler function. Remove when deploying template. ***/
+  var gibberish=["This is just some filler text.", "Welcome to elwebman.nl demo site", "Web development is great.", "Demo content nothing to read here.", "Trying to get my head around CSS.", "FLOAT, FLOAT, POSITION, INLINE" ]
+  function filltext(words){
+    for (var i=0; i<words; i++)
+      document.write(gibberish[Math.floor(Math.random()*6)]+" ")
+  }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <nav>
+      <h1><a href="#">elwebman.nl</a></h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <header>
+     <ul>
+       <li><a href="https://www.facebook.com/elwebman?fref=ts" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a> </li>
+       <li><a href="#" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+       <li><a href="https://nl.linkedin.com/in/elwebman" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a> </li>
+       <li><a href="#" target="_blank"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a> </li>
+       <li><a href="https://github.com/elwebman" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a> </li>
+     </ul>
+   </header>
+   <article id="contact">
+    <img class="img-circle" src="images/hi.jpg" alt="elwebman contact page">
+    <h1>Let&apos;s get in touch!</h1>
+    <hr class="style-eight">
+    <form method="post">
+      <div class="formgroup" id="name-form">
+        <label for="name">Your name*</label>
+        <input type="text" id="name" name="name" />
+      </div>
+      <div class="formgroup" id="email-form">
+        <label for="email">Your e-mail*</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div class="formgroup" id="message-form">
+        <label for="message">Your message</label>
+        <textarea id="message" name="message"></textarea>
+      </div>
+      <input type="submit" value="Send your message!" />
+    </form>
+  </article>
+  <footer>
+    <h2>elwebman.nl</h2>
+    <ul>
+     <li><a href="https://www.facebook.com/elwebman?fref=ts" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a> </li>
+     <li><a href="#" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+     <li><a href="https://nl.linkedin.com/in/elwebman" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a> </li>
+     <li><a href="#" target="_blank"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a> </li>
+     <li><a href="https://github.com/elwebman" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a> </li>
+   </ul>
+ </footer>
+</div>
+</body>
+</html>
