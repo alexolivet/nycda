@@ -96,11 +96,50 @@ aside {
 	bottom: 0;
 }
 
+#about_left{
+	float: left;
+	margin: 10px;
+	width: 500px;
+	background-color: #C5CAE9;
+	border-radius: 25px;
+	bottom: 0;
+}
+
+#about_left img{
+		width: 100%;
+		border-radius: 25px;
+	
+}
+
+#about_right {
+	float: left;
+	margin: 10px;
+	width: 450px;
+	background-color: #C5CAE9;
+	border-radius: 25px;
+	bottom: 0;
+}
+
+#about_left img{
+		width: 100%;
+		border-radius: 25px;
+		height: 100%;
+	
+}
+
 footer {
 	clear: both;
 	background-color: #303F9F;
 	border-radius: 25px;
 	height: 100px;
+	color:#FFFFFF;
+}
+
+footer h3 {
+	float: left;
+	padding: 5px;
+	margin: 10px;
+	color:#FFFFFF;
 }
 
 hr.style-eight {
@@ -157,7 +196,7 @@ ul{
 }
 
 li {
-	float: left;
+	float: right;
 }
 
 li a {
@@ -187,12 +226,12 @@ input, textarea{
 	outline: none;
 	padding: 10px;
 	font-size: 1em;
-	color: #676767;
-	border: solid 3px #98d4f3;
+	color: #212121;
+	border: solid 3px #8BC34A;
 }
 
 input:focus, textarea:focus{
-	border: solid 3px #77bde0;	
+	border: solid 3px #8BC34A;	
 }
 
 textarea{
@@ -202,7 +241,7 @@ textarea{
 }
 
 input[type="submit"]{
-	background-color: #F90;
+	background-color: #8BC34A;
 	height: 50px;
 	cursor: pointer;
 	margin-top: 20px;
@@ -226,10 +265,15 @@ label{
 		background: radial-gradient(circle, white, powderblue, white, cyan);
 	}
 
-	header,nav,nav ul,article,aside,footer,#contact,form,label,input,textarea{
+	header,nav,nav ul,article,aside,footer,#contact,form,label,input,textarea,#about_left,#about_right{
 		width: 100%;
 		margin-left: 0;
 	}
+
+	footer h3{
+		display: none;
+	}
+
 }
 
 /* responsive layout CSS */
@@ -239,10 +283,15 @@ label{
 		background: radial-gradient(circle, white, powderblue, white, cyan);
 	}
 
-	header,nav,nav ul,article,aside,footer,#contact,form,label,input,textarea{
+	header,nav,nav ul,article,aside,footer,#contact,form,label,input,textarea,#about_left,#about_right{
 		width: 100%;
 		margin-left: 0;
 	}
+
+	footer h3{
+		display: none;
+	}
+
 }
 
 /* responsive layout CSS */
@@ -252,8 +301,13 @@ label{
 		background: radial-gradient(circle, white, powderblue, white, cyan);
 	}
 
-	header,nav,nav ul,article,aside,footer,#contact,form,label,input,textarea{
+	header,nav,nav ul,article,aside,footer,#contact,form,label,input,textarea,#about_left,#about_right{
 		width: 100%;
 		margin-left: 0;
 	}
+
+	footer h3{
+		display: none;
+	}
+
 }
