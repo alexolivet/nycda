@@ -1,15 +1,30 @@
 body{
-	padding: 20px;
+	padding: 5px;
+	margin: 40px;
 	text-align: center;
 	font-family: "Trebuchet MS", Verdana, fantasy;
 }
 
-#container {
+.container {
+	/*none*/
+}
+
+header{
 	margin: 0 auto;
-	padding:10px;
 	background: #EAEAEA;
-	height: 60px; /*Height of top section*/
 	border-radius: 25px;
+	height: 160px;
+}
+
+header h1 {
+	float: left;
+	padding: 10px;
+	line-height: 40px;
+	margin: 0 auto;
+}
+
+header h1 span {
+	color: #5383d3;
 }
 
 nav {
@@ -31,6 +46,7 @@ article {
 	clear: right;
 	border-radius: 25px;
 
+
 }
 
 aside {
@@ -39,6 +55,7 @@ aside {
 	width: 250px;
 	background-color: green;
 	border-radius: 25px;
+	bottom: 0;
 
 }
 
@@ -121,9 +138,7 @@ li a {
 	margin-left: 0;
 	}
 	
-	.container{
-	margin-right: 0;
-	}
+
 }
 
 /* responsive layout CSS */
@@ -133,9 +148,7 @@ li a {
 	margin-left: 0;
 	}
 	
-	.container{
-	margin-right: 0;
-	}
+
 }
 
 /* responsive layout CSS */
@@ -145,7 +158,5 @@ li a {
 	margin-left: 0;
 	}
 	
-	.container{
-	margin-right: 0;
-	}
+
 }
