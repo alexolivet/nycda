@@ -220,6 +220,7 @@ label, input, textarea{
 }
 
 input, textarea{
+		margin: 0 auto;
 	width: 500px;	
 	border: none;
 	border-radius: 20px;
