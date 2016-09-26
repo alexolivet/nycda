@@ -173,21 +173,18 @@ hr.style-eight {
 /* link styling */
 
 a:link {
-	color:#ffffff; 
-	background-color:transparent; 
+	color:black; 
 	text-decoration:none;
 }
 
 
 a:hover {
-	color: black; 
-	background-color:transparent; 
+	color: cyan; 
 	text-decoration:none;
 }
 
 a:active {
-	color:cyan; 
-	background-color:transparent; 
+	color:white; 
 	text-decoration:none;
 }
 
