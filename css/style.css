@@ -6,7 +6,6 @@ body{
 	color: #212121;
 	background-image: url("../images/background-big.jpg");
 	background-size: cover;
-	
 }
 
 .container {
@@ -27,7 +26,6 @@ nav h1 {
 	margin: 0 auto;
 }
 
-
 nav img {
 	clear: both;
 	margin-bottom: 15px;
@@ -35,23 +33,17 @@ nav img {
 	margin-left:10px;
 }
 
-
 nav ul {
 	float: right;
 	list-style: none;
 	font-size: 18px;
-	
 }
-
 
 nav a {
 	text-decoration: none;
 	color: #ffffff;
 	display: block;
 }
-
-
-
 
 
 header {
@@ -61,8 +53,6 @@ header {
 	width: 250px;
 	background-color: #8BC34A;
 	border-radius: 25px;
-	
-
 }
 
 article{
@@ -73,7 +63,6 @@ article{
 	border-radius: 25px;
 }
 
-
 #contact {
 	float: left;
 	margin: 10px;
@@ -82,7 +71,6 @@ article{
 }
 
 .card{
-
 	box-shadow: 1px 1px 10px #8BC34A;
 	border-top: 30px solid #8BC34A;
 	border-bottom: 30px solid #8BC34A;
@@ -99,7 +87,6 @@ article img {
 	margin-left:1px;
 }
 
-
 aside {
 	float: left;
 	margin: 10px;
@@ -107,7 +94,6 @@ aside {
 	background-color: #C5CAE9;
 	border-radius: 25px;
 	bottom: 0;
-
 }
 
 footer {
@@ -168,7 +154,6 @@ ul{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-
 }
 
 li {
@@ -186,11 +171,9 @@ li a {
 	border-radius: 50%;
 }
 
-
 form{
 	margin: 0 auto;
 	width: 500px;
-	
 }
 
 label, input, textarea{
@@ -206,8 +189,8 @@ input, textarea{
 	font-size: 1em;
 	color: #676767;
 	border: solid 3px #98d4f3;
-	
 }
+
 input:focus, textarea:focus{
 	border: solid 3px #77bde0;	
 }
@@ -217,6 +200,7 @@ textarea{
 	resize: none; 
 	overflow: auto;
 }
+
 input[type="submit"]{
 	background-color: #F90;
 	height: 50px;
@@ -224,16 +208,15 @@ input[type="submit"]{
 	margin-top: 20px;
 	font-size: 1.29em;
 }
+
 input[type="submit"]:hover{
 	background-color: #e58f0e;
-	
 }
-label{
 
+label{
 	margin-top: 20px;
 	padding-left: 20px;
 }
-
 
 
 /* responsive layout CSS */
@@ -241,15 +224,12 @@ label{
 
 	body{
 		background: radial-gradient(circle, white, powderblue, white, cyan);
-
 	}
 
 	header,nav,nav ul,article,aside,footer,#contact,form,label,input,textarea{
 		width: 100%;
 		margin-left: 0;
 	}
-	
-
 }
 
 /* responsive layout CSS */
@@ -257,15 +237,12 @@ label{
 
 	body{
 		background: radial-gradient(circle, white, powderblue, white, cyan);
-
 	}
 
 	header,nav,nav ul,article,aside,footer,#contact,form,label,input,textarea{
 		width: 100%;
 		margin-left: 0;
 	}
-	
-
 }
 
 /* responsive layout CSS */
@@ -279,6 +256,4 @@ label{
 		width: 100%;
 		margin-left: 0;
 	}
-	
-
 }
