@@ -276,7 +276,7 @@ label{
 
 
 /* responsive layout CSS */
-@media (max-width: 960px){ 
+@media (max-width: 1250px){ 
 
 	body{
 		background: radial-gradient(circle, white, powderblue, white, cyan);
@@ -293,38 +293,3 @@ label{
 
 }
 
-/* responsive layout CSS */
-@media (max-width: 840px){ 
-
-	body{
-		background: radial-gradient(circle, white, powderblue, white, cyan);
-	}
-
-	header,nav,nav ul,article,aside,footer,#contact,form,label,input,textarea,#about_left,#about_right,.card,.card ul{{
-		width: 100%;
-		margin-left: 0;
-	}
-
-	footer h3{
-		display: none;
-	}
-
-}
-
-/* responsive layout CSS */
-@media (max-width: 600px){ 
-
-	body{
-		background: radial-gradient(circle, white, powderblue, white, cyan);
-	}
-
-	header,nav,nav ul,article,aside,footer,#contact,form,label,input,textarea,#about_left,#about_right,.card,.card ul{{
-		width: 100%;
-		margin-left: 0;
-	}
-
-	footer h3{
-		display: none;
-	}
-
-}
