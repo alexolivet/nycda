@@ -20,23 +20,16 @@ nav{
 }
 
 nav h1 {
-	float: left;
+	float: right;
 	padding: 10px;
 	line-height: 40px;
 	margin: 0 auto;
 }
 
-nav img {
-	clear: both;
-	margin-bottom: 15px;
-	margin-right: 15px;
-	margin-left:10px;
-}
-
 nav ul {
-	float: right;
+	float: left;
 	list-style: none;
-	font-size: 18px;
+	font-size: 19px;
 }
 
 nav a {
