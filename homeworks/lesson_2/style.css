@@ -1,0 +1,91 @@
+body{
+	padding: 20%;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding-top: 1%;
+	background: radial-gradient(circle, white, powderblue, white, cyan);
+	margin:auto;
+}
+
+p {
+	line-height: 20px;	
+}
+
+header {
+	text-align: center;
+	background-color: powderblue;
+	width: 100%;
+}
+
+footer {
+	text-align: center;
+	background-color: powderblue;
+}
+
+hr.style-eight {
+	padding: 0;
+	border: none;
+	border-top: medium double #333;
+	color: #333;
+	text-align: center;
+}
+
+h5 {
+	color: red;
+	text-align: left;
+}
+
+nav{
+	text-align: center;
+}
+
+iframe	{
+	width:400px; 
+	height:400px; 
+	margin: -10px 0 0 0;
+}
+
+/* inspired by this website http://www.webmaster-source.com/2012/04/24/pure-css-blockquote-styling/ */
+blockquote {
+	background: #f9f9f9;
+	margin: 0.5em 60px;
+	padding: 0.5em 1px;
+	quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+	content: open-quote;
+	font-size: 4em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
+}
+
+blockquote cite {
+	color: #999999;
+	font-size: 14px;
+	display: block;
+	margin-top: 5px;
+}
+
+blockquote cite:before {
+	content: "\2014 \2009";
+}
+
+.panel {
+	margin-left: 10px;
+}
+
+.clearfix {
+	float: left;
+	margin: 1px 10px 0 0;
+	padding: 1px;
+}
+
+#blue{
+	color: blue;
+}
+
+#clearfooter {
+height: 80px;
+clear: both;
+}

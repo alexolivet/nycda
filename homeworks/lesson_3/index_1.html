@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2 column layout - social icons bar</title>
+	<link rel="stylesheet" type="text/css" href="http://nycda.zone/elwebman107/homeworks/lesson_3/css/style_1.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<script type="text/javascript">
+	/*** Temporary text filler function. Remove when deploying template. ***/
+	var gibberish=["This is just some filler text.", "Welcome to elwebman.nl demo site", "Web development is great.", "Demo content nothing to read here.", "Trying to get my head around CSS.", "FLOAT, FLOAT, POSITION, INLINE" ]
+	function filltext(words){
+		for (var i=0; i<words; i++)
+			document.write(gibberish[Math.floor(Math.random()*6)]+" ")
+	}
+	</script>
+</head>
+<body>
+	<header>
+		<nav>
+			<h1>2 columns layout.</h1>
+			<a href="https://www.facebook.com/elwebman?fref=ts" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a> 
+			<a href="#" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+			<a href="https://nl.linkedin.com/in/elwebman" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a> 
+			<a href="#"	target="_blank"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a> 
+			<a href="https://github.com/elwebman" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a> 
+		</nav>
+	</header>
+	<section>
+		<div class="innertube">
+			<iframe src="http://www.elwebman.nl"></iframe>
+			<b><em>Right Column</em></b> 
+			<p><script type="text/javascript">filltext(15)</script></p>
+			<br>
+			<p><script type="text/javascript">filltext(15)</script></p>
+		</div>
+	</section>
+	<article>
+		<div class="innertube">
+			<img src="images/hi.jpg" alt="2 xolumns layout">
+			<b><em>Left Column</em></b> 
+			<p><script type="text/javascript">filltext(15)</script></p>
+			<br>
+			<p><script type="text/javascript">filltext(15)</script></p>
+			<br>
+			<p><script type="text/javascript">filltext(15)</script></p>
+			<br>
+			<p><script type="text/javascript">filltext(15)</script></p>
+		</div>
+	</article>
+	<footer>
+		<a href="http://www.elwebman.nl">by elwebman.nl</a>
+		<br>
+		<i class="fa fa-html5 fa-2x" aria-hidden="true"></i>
+		<i class="fa fa-css3 fa-2x" aria-hidden="true"></i>
+	</footer>
+</body>
+</html>
+
+
