@@ -103,7 +103,7 @@ article a:link {
 }
 
 aside {
-	float: left;
+	float: right;
 	margin: 10px;
 	width: 250px;
 	background-color: #C5CAE9;
