@@ -1,3 +1,7 @@
+*{
+	box-sizing: border-box;
+}
+
 body{
 	padding: 5px;
 	margin: 40px;
@@ -6,12 +10,14 @@ body{
 	color: #212121;
 	background-image: url("../images/background-big.jpg");
 	background-size: cover;
+
 }
 
 #container {
 	/* none */
 	margin: 0 auto;
 	width: 100%;
+
 }
 
 nav{
@@ -92,8 +98,8 @@ article a:link {
 	text-align: center;
 	display: block;
 	clear: both;
-    margin-left: 120px;
-    margin-right: 120px;
+	margin-left: 120px;
+	margin-right: 120px;
 }
 
 aside {
