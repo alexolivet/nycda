@@ -68,11 +68,11 @@ article a:link {
 /* contact page styling */
 
 #contact {
-	float: left;
+	float: none;
 	margin: 10px;
-	clear: right;
 	width: 750px;
 }
+
 
 .card{
 	display: inline-block;
