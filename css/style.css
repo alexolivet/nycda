@@ -48,16 +48,14 @@ nav a {
 header {
 	float: left;
 	margin: 10px;
-	clear: right;
 	width: 250px;
 	background-color: #8BC34A;
 	border-radius: 25px;
 }
 
 article{
-	float: left;
+	display: inline-block;
 	margin: 10px;
-	clear: right;
 	width: 700px;
 	border-radius: 25px;
 }
@@ -84,6 +82,8 @@ article a:link {
 }
 
 .card{
+	display: inline-block;
+	width: 100%;
 	box-shadow: 1px 1px 10px #8BC34A;
 	border-top: 30px solid #8BC34A;
 	border-bottom: 30px solid #8BC34A;
@@ -103,7 +103,7 @@ article a:link {
 }
 
 aside {
-	float: right;
+	float: left;
 	margin: 10px;
 	width: 250px;
 	background-color: #C5CAE9;
@@ -138,12 +138,11 @@ aside a {
 }
 
 #about_right {
-	float: left;
+	display: inline-block;
 	margin: 10px;
 	width: 450px;
 	background-color: #C5CAE9;
 	border-radius: 25px;
-	bottom: 0;
 }
 
 footer {
