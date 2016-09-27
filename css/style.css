@@ -172,7 +172,7 @@ hr.style-eight {
 /* link styling */
 
 a:link {
-	color:black; 
+	color:white; 
 	text-decoration:none;
 }
 
@@ -183,7 +183,7 @@ a:hover {
 }
 
 a:active {
-	color:white; 
+	color:black; 
 	text-decoration:none;
 }
 
@@ -273,21 +273,32 @@ label{
 	padding-left: 20px;
 }
 
+script{
+	display: block;
+}
+
 
 /* responsive layout CSS */
-@media (max-width: 1250px){ 
+@media (max-width: 1350px){ 
 
 	body{
 		background: radial-gradient(circle, white, powderblue, white, cyan);
 	}
 
-	header,nav,nav ul,article,aside,footer,#contact,form,label,input,textarea,#about_left,#about_right,.card,.card ul,#container{
+	header,nav,nav ul,article,aside,footer,form,label,input,textarea,#about_left,#about_right,.card,.card ul,#container,script{
 		width: 100%;
 		margin-left: 0;
 	}
 
 	footer h3{
 		display: none;
+	}
+
+	#about_left img,{
+		width: 50%;
+	}
+	#contact{
+		width: 75%;
 	}
 
 }
