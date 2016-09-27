@@ -8,12 +8,13 @@ body{
 	background-size: cover;
 }
 
-.container {
+#container {
 	/* none */
+	margin: 0 auto;
+	width: 100%;
 }
 
 nav{
-	margin: 0 auto;
 	background: #3F51B5;
 	border-radius: 25px;
 	height: 100px;
@@ -274,7 +275,7 @@ label{
 		background: radial-gradient(circle, white, powderblue, white, cyan);
 	}
 
-	header,nav,nav ul,article,aside,footer,#contact,form,label,input,textarea,#about_left,#about_right,.card,.card ul{
+	header,nav,nav ul,article,aside,footer,#contact,form,label,input,textarea,#about_left,#about_right,.card,.card ul,#container{
 		width: 100%;
 		margin-left: 0;
 	}
