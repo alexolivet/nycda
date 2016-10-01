@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript cheat sheet</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h2>1 - data types</h2>
+  <p>Just like a language has nouns, verbs, and prepositions, JavaScript has its own building blocks. </p>
+  <p>There are three essential data types</p>
+  <table>
+    <tr>
+      <th>NAME</th>
+      <th>DESCRIPTION</th>
+      <th>EXAMPLE</th>
+    </tr>
+    <tr>
+      <td>STRING</td>
+      <td><p>Any grouping of words or numbers surrounded by single quotes</p></td>
+      <td><p>'LOVE' , '5.30 in the afternoon' , 'hello world!'</p></td>
+    </tr>
+    <tr>
+      <td>NUMBER</td>
+      <td><p>Any number, including numbers with decimals, without quotes.</p></td>
+      <td><p>44, 8 . 1367, 23.34 (note the point)</p></td>
+    </tr>
+    <tr>
+     <td>Boolean</td>
+     <td><p>Boolean: This is always one of two words. Either true or false, with no quotations.</p></td>
+     <td><p>true or false</p></td>
+   </tr>
+ </table>
+ <hr class="style-eight">
+ <h2>2 - console</h2>
+ <p>How to ask JavaScript to talk to us?</p>
+ <p> through the console</p>
+ <p>The console can be described as a  way to ask JavaScript to talk and something for JavaScript to say.</p>
+ <p> the console is available in Google Chrome > Developers tool. Shortcut: ctrl + I </p>  
+ <table>
+  <tr>
+    <th>declaration</th>
+    <th>description</th>
+  </tr>
+  <tr>
+    <td><p>console.log('Your message here.');</p></td>
+    <td><p>ask JavaScript to print words to the console with this line of code. </p></td>
+  </tr>
+  <tr>
+    <td><p>console.log('bacon', 'pesto');</p></td>
+    <td><p>We can log multiple things at once by separating them with commas.</p></td>
+  </tr>
+  <tr>
+   <td><ul>
+    <li>console.log(46+3.5)</li>
+    <li>console.log(2016-1969)</li>
+    <li>console.log(65/240)</li>
+    <li>console.log(0.2708333333333333*100)</li>
+    <ul>
+    </td>
+    <td><p>we can extend the use of the console.log entry to make any type of calculation.</p></td>
+  </tr>
+</table>
+<hr class="style-eight">
+<h2>3 - variables</h2>
+<p>Variables allow us to assign data to a word, then we can use that word within our program instead of the data. Then, if the variable's value changes we only have to change the variable's value instead of re-writing the entire program.</p>
+
+<table>
+  <tr>
+    <th>declaration</th>
+    <th>description</th>
+  </tr>
+  <tr>
+    <td>
+      <pre>
+        var myName = 'Arya';
+        console.log(myName);
+        // Output: Arya
+      </pre>
+    </td>
+    <td>
+      <ul>
+        <li>var, short for variable, is the JavaScript keyword that will create a new variable for us.</li>
+        <li>myName is chosen by a developer. Notice that the word has no spaces, and each new word is capitalized. This is a common convention in JavaScript, and is called camelCase.</li>
+        <li>= means to assign whatever's next to the variable.</li>
+        <li>'Arya' is the value that the equals = assigns into the variable myName.
+        </li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <pre>
+        var strength = '50,000 pounds';
+        var age = 46;
+        var hasPet = true;
+        console.log(hasPet);
+      </pre>
+    </td>
+    <td><p>Variables can hold any data type, like strings, numbers, and Booleans. They can also hold data types like arrays, functions and objects</p></td>
+  </tr>
+  <tr>
+   <td>
+    <pre>
+     var weatherCondition = 'Monday: Raining cats and dogs';
+     weatherCondition = 'Tuesday: Sunny';
+
+     console.log(weatherCondition); 
+     // Output: 'Tuesday: Sunny'
+   </pre>
+ </td>
+ <td>
+  <ul> Variables are useful in two ways:
+    <li>
+      they allow us to use the same value over and over, without having to write a string or other data type over and over.
+    </li>
+    <li>More importantly, we can assign variables different values that can be read and changed by the program without altering our code.</li>
+  </ul>
+  <p>We can change a variable's value if we want</p>
+  <p>We created a variable by using the keyword var and the name weatherCondition.</p>
+</p>Then, we took the existing weatherCondition variable, and set its value equal to 'Tuesday: Sunny'.</p>
+</td>
+</tr>
+<tr>
+ <td>
+  <pre>
+    var myPet = 'armadillo';
+    console.log('I own a pet ' + myPet + '.'); 
+    // Output: 'I own a pet armadillo.'
+  </pre>
+</td>
+<td>
+  <p>It is also possible to put a variable's value into a string.</p>
+  <p>he JavaScript term for this idea is interpolation.</p>
+  <p>We can use the + operator to interpolate (insert) a variable into a string</p>
+</td>
+</tr>
+</table>
+<hr class="style-eight">
+<h2>4 - Window alert() Method</h2>
+<p>The alert() method displays an alert box with a specified message and an OK button.
+  An alert box is often used if you want to make sure information comes through to the user.</p>
+  <table>
+    <tr>
+      <th>declaration</th>
+      <th>description</th>
+    </tr>
+    <tr>
+      <td><p>alert("Hello! I am an alert box!");</p></td>
+      <td>
+        <p>Click the button to display an alert box.</p>
+        <button onclick="myFunction()">Try it</button>
+        <script>
+        function myFunction() {
+          alert("Hello! I am an alert box!");
+        }
+        </script>
+      </td>
+    </tr>
+    <tr>
+      <td><p>alert("Hello\nHow are you?");</p>
+      </td>
+      <td>
+        <p>Click the button to demonstrate line-breaks in an alert box. line breaks can be use in place of an aposrophy for example ( let\s dance).</p>
+        <button onclick="myFunction2()">Try it</button>
+        <script>
+        function myFunction2() {
+          alert("Hello\nHow are you?");
+        }
+      </script></td>
+    </tr>
+    <tr>
+     <td><p>alert(location.hostname);</p></td>
+     <td>
+      <p>Click the button to alert the hostname of the current URL. Only works online ( so locally it will not work )</p>
+      <button onclick="myFunction3()">Try it</button>
+      <script>
+      function myFunction3() {
+        alert(location.hostname);
+      }
+      </script>
+    </td>
+  </tr>
+</table>
+<hr class="style-eight">
+<h2>5 - Arrays</h2>
+<p>arrays are used to store multiple values in a single variable.</p>
+<p>Variables hold 1 values. However Arrays can hold multiple values at once.</p>
+<p>An array can hold many values under a single name, and you can access the values by referring to an index number.</p>
+<table>
+  <tr>
+    <th>description</th>
+    <th>declaration</th>
+  </tr>
+  <tr>
+    <td><p>best is to write the array in 1 line. This is the preferred method</p></td>
+    <td><p>var cars = ["Saab", "Volvo", "BMW"];</p></td> 
+  </tr>
+  <tr>
+    <td>
+      <p>Access an element of the array:</p>
+      <p>You refer to an array element by referring to the index number. in other words, the input order of the array will set the index number of each value.</p><p>Array indexes start with 0.</p>
+      <p> In this example, saab has inder order [0] but the second line modifies the first element in var cars and thus the response is opel</p>
+      <td>
+        <pre>
+          var cars = ["Saab", "Volvo", "BMW"];
+          var cars [0] = "Opel"
+          document.getElementById("demo").innerHTML = cars[0];
+        </pre>
+      </td>
+    </td>
+  </tr>
+  <tr>
+   <td><p>Access the Full Array. the full array can be accessed by referring to the array name.</p></td>
+   <td>
+    <pre>var cars = ["Saab", "Volvo", "BMW"];
+      document.getElementById("demo").innerHTML = cars;
+    </pre>
+  </td>
+</tr>
+<tr>
+  <td><p>Arrays are Objects. Arrays use numbers to access its "elements". use objects when you want the element names to be strings (text). use arrays when you want the element names to be numbers.</p>
+  </td>
+  <td>
+    <p>In this example, person[0] returns John</p>
+    <pre>
+      var person = ["John", "Doe", 46];
+      document.getElementById("demo").innerHTML = person[0];
+    </pre>
+  </td> 
+</tr>
+<tr>
+  <td><p>Arrays are Objects. Objects use names to access its "members".</p>
+  </td>
+  <td>
+    <p>In this example, person.firstName returns John. note the curly brackets</p>
+    <pre>
+      var person = {firstName:"John", lastName:"Doe", age:46};
+      document.getElementById("demo").innerHTML = person["firstName"];
+    </pre>
+  </td> 
+</tr>
+</table>
+<hr class="style-eight">
+<h2>6 - comments</h2>
+<p>JavaScript comments can be used to explain JavaScript code, and to make it more readable.</p>
+<p>JavaScript comments can also be used to prevent execution, when testing alternative code.</p>
+<table>
+  <tr>
+    <th>DESCRIPTION</th>
+    <th>EXAMPLE</th>
+  </tr>
+  <tr>
+    <td><p>Single Line Comments. Single line comments start with //. Any text between // and the end of the line will be ignored by JavaScript (will not be executed).</p>
+      /td>
+      <td><p>// console.log ('this message will not show up as it is uncommented by the single line comment at THE BEGINNING of the line.').</p></td>
+    </tr>
+    <tr>
+      <td><p>Use a single line comment at the end of each line to explain the code.</p></td>
+      <td><p>var x = 5;      // Declare x, give it the value of 5 </p></td>
+    </tr>
+    <tr>
+      <td><p>Multi-line comments start with /* and end with */. Any text between /* and */ will be ignored by JavaScript.</p></td>
+      <td>
+        <pre>
+          /*The code below will change
+          the heading with id = "myH"
+          and the paragraph with id = "myP"
+          in my web page:
+          */
+          document.getElementById("myH").innerHTML = "My First Page";
+          document.getElementById("myP").innerHTML = "My first paragraph.";
+        </pre>
+      </td>
+    </tr>
+  </table>
+  <hr class="style-eight">
+  <h2>7 - math operators </h2>
+  <p>JavaScript includes the general math operators that you can find on a calculator</p>
+  <table>
+    <tr>
+      <th>
+        <ol>
+          <li>Add: +</li>
+          <li>Subtract: -</li>
+          <li>Multiply: * </li>
+          <li>Divide: /</li>
+        </ol>
+      </th>
+      <th>
+        <pre>
+          console.log(46+3.5)
+          console.log(2016-1969)
+          console.log(65/240)
+          console.log(0.2708333333333333*100)
+        </pre>
+      </th>
+    </tr>
+    <tr>
+      <td><p>modulus: %</p></td>
+      <td><p>The idea behind the modulus is to show you the remainder after you divide a number.</p>
+        <p>So, if you divide 13 / 5, 5 goes into 13 two times, and there will be 3 remaining. A modulus, denoted by a %, would take 13 % 5 and return the remainder 3.</p>
+      </td>
+    </tr>
+  </table>
+  <hr class="style-eight">
+  <hr class="style-eight">
+  <hr class="style-eight">
+  <h2> Javascript EXERCISE</h2>
+  <p>Use cases putting the logic of Javascript at play.</p>
+
+  <table>
+    <tr>
+      <th>Scenario</th>
+      <th>output</th>
+    </tr>
+    <tr>
+      <td><p>Create a script with two variables assigned to two numbers. Add them together and output the result to the console.</p></td>
+      <td>
+       <button onclick="myFunction4()">Click me</button>
+       <p id="demo4"></p>
+       <script>
+       function myFunction4() {
+        var one = 2;
+        var two = 4;
+        var total = one + two;
+        document.getElementById("demo4").innerHTML = total;
+      }
+      </script>
+      <pre>
+        var one = 2;
+        var two = 4;
+        var total = one + two;
+        console.log(total);
+      </pre>
+    </td>
+  </tr>
+  <tr>
+    <td><p>Create a script with two variables assigned to two string. Add them together and output the result to the console.</p></td>
+    <td>
+     <button onclick="myFunction5()">Click me</button>
+     <p id="demo5"></p>
+     <script>
+     function myFunction5() {
+      var firstName = 'Alex';
+      var lastName = 'Fernandez';
+      var fullName = firstName + lastName;
+      document.getElementById("demo5").innerHTML = fullName;
+    }
+    </script>
+    <pre>
+      var firstName = 'Alex';
+      var lastName = 'Fernandez';
+      var fullName = firstName + lastName;
+      console.log(fullName);
+    </pre>
+  </td>  
+</tr>
+<tr>
+ <td><p>Create a multidimensional array related to a subject that interests you. Output two of the items in sub-arrays to the console.</p></td>
+ <td>
+   <button onclick="myFunction6()">Click me to find out what I love doing</button>
+   <p id="demo6"></p>
+   <script>
+   function myFunction6() {
+    var cars = ["Music", "Web Development", "travelling"];
+    document.getElementById("demo6").innerHTML = cars[1] +' and '+ cars[2];
+  }
+  </script>
+  <pre>
+   function myFunction2() {
+   var cars = ["Music", "Web Development", "travelling"];
+   document.getElementById("demo2").innerHTML = cars[1] +' and '+ cars[2];
+ }
+</pre>
+</td>  
+</tr>
+<tr>
+  <td>
+    <p>Write a script that checks if a variable is less than 10. If it is, alert the user that their variable is less than 10. If it is not, using the console, let the user know that what the variable was and that it was greater than 10.</p>
+  </td>
+  <td>
+    <p> please submit any number in the box and click submit</p>
+    <input id="numb" type="text">
+    <button type="button" onclick="myFunction10()">Submit</button>
+    <script>
+    function myFunction10() {
+      var theStatement, text
+// Get the value of input field with id="numb"
+theStatement = document.getElementById("numb").value;
+  // If theStatement input is less than 10, send alert to user
+  if(theStatement < 10) {
+    alert("your variable is less than 10");
+ // else sent the input data and what the variable was value of 10
+} else {
+  alert('your input was: ' + theStatement + ' \ The variable was set to 10');
+}
+}
+</script>
+<pre>
+  function myFunction10() {
+  var theStatement, text
+  // Get the value of input field with id="numb"
+  theStatement = document.getElementById("numb").value;
+  // If theStatement input is less than 10, send alert to user
+  if(theStatement < 10) {
+  alert("your variable is less than 10");
+  // else sent the input data and what the variable was value of 10
+} else {
+alert('your input was: ' + theStatement + ' \ The variable was set to 10');
+}
+}
+</pre>
+</td>
+</tr>
+<tr>
+  <td>
+    <p>Write a similar program to check if a string stored in a variable is the same as another string.</p>
+  </td>
+  <td>
+    <p> please submit any words or letter in the box and click submit.</p>
+    <p>Note: Only words are allowed</p>
+    <input id="words" type="text">
+    <button type="button" onclick="myFunction11()">Submit</button>
+    <script>
+    function myFunction11() {
+      var theStatement, text
+    // Get the value of input field with id="words"
+    theStatement = document.getElementById("words").value;
+  // If theStatement is a word, fire the alert
+  if(theStatement >words) {
+    alert("Thank you for the data.");
+ // else then sent back the input and fire alert
+} else {
+  alert('your input was: ' + theStatement + ' \ you must submit letters');
+}
+}
+</script>
+<pre>
+ function myFunction11() {
+ var theStatement, text
+ // Get the value of input field with id="words"
+ theStatement = document.getElementById("words").value;
+ // If theStatement is a word, fire the alert
+ if(theStatement >words) {
+ alert("Thank you for the data.");
+ // else then sent back the input and fire alert
+} else {
+alert('your input was: ' + theStatement + ' \ you must submit letters');
+}
+}
+</pre>
+</td>
+</tr>
+<tr>
+  <td><p> Declare a function that takes a name as an argument and tells the user what name they've entered. Try running it after it has been declared.</p></td>
+  <td>
+   <p> please submit a value ( words and/or letter) in the box and click submit.</p>
+   <p>Note: Only words are allowed</p>
+   <input id="argument" type="text">
+   <button type="button" onclick="myFunction12()">Submit</button>
+   <script>
+   function myFunction12() {
+    var theStatement, text
+    // Get the value of input field with id="argument"
+    theStatement = document.getElementById("argument").value;
+  // take the statement and print it in the alert
+  if(theStatement = theStatement) {
+    alert('your input was: ' + theStatement);
+  } 
+}
+</script>
+<pre>function myFunction12() {
+  var theStatement, text
+  // Get the value of input field with id="argument"
+  theStatement = document.getElementById("argument").value;
+  // take the statement and print it in the alert
+  if(theStatement = theStatement) {
+  alert('your input was: ' + theStatement);
+} 
+}
+</pre>
+</td>
+</tr>
+<tr>
+  <td>Declare a function that takes no arguments but prints something to the console. Try running it after it has been declared.</td>
+  <td>
+    <button onclick="myFunction14()">Click me if you want to know more</button>
+    <p id="demo14"></p>
+    <script>
+    function myFunction14() {
+      document.getElementById("demo14").innerHTML = "Hello, I am just printing stuff on the screen.";
+    }
+    </script>
+    <pre>
+      function myFunction14() {
+      document.getElementById("demo14").innerHTML = "Hello, I am just printing stuff on the screen.";
+    }
+  </pre>
+</td>
+</tr>
+<tr>
+  <td>Declare a function that depending upon which virtual 'door' was entered tells the user they've received a different 'prize' in an alert. After declaring the function, try running it with different options.</td>
+  <td><p>Any grouping of words or numbers surrounded by single quotes</p></td>
+</tr>
+</table>
+</body>
+</html>
