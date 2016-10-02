@@ -424,13 +424,13 @@ alert('your input was: ' + theStatement + ' \ The variable was set to 10');
     <script>
     function myFunction11() {
       var theStatement, text
-    // Get the value of input field with id="words"
-    theStatement = document.getElementById("words").value;
-  // If theStatement is a word, fire the alert
-  if(theStatement >words) {
-    alert("Thank you for the data.");
- // else then sent back the input and fire alert
-} else {
+      // Get the value of input field with id="words"
+      theStatement = document.getElementById("words").value;
+    // If theStatement is a word, fire the alert
+    if(theStatement >words) {
+      alert("Thank you for the data.");
+   // else then sent back the input and fire alert
+ } else {
   alert('your input was: ' + theStatement + ' \ you must submit letters');
 }
 }
@@ -500,7 +500,23 @@ alert('your input was: ' + theStatement + ' \ you must submit letters');
 </tr>
 <tr>
   <td>Declare a function that depending upon which virtual 'door' was entered tells the user they've received a different 'prize' in an alert. After declaring the function, try running it with different options.</td>
-  <td><p>Any grouping of words or numbers surrounded by single quotes</p></td>
+  <td>
+    <pre>      
+      <button type="button" onclick="myFunction11()">Submit</button>
+      <script>
+      function myFunction11() {
+        var theStatement, button
+      // Get the value of input field with id="words"
+      if(theStatement >button) {
+        alert("Thank you for the data.");
+   // else then sent back the input and fire alert
+ } else {
+  alert('your input was: ' + theStatement + ' \ you must submit letters');
+}
+}
+</script>
+</pre>
+</td>
 </tr>
 </table>
 </body>
