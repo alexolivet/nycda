@@ -2,23 +2,23 @@
 	margin: 20px;
 }
 table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: auto 0;
-    overflow-x:auto;
-    margin-bottom: 60px;
+  border-collapse: collapse;
+  width: 100%;
+  margin: auto 0;
+  overflow-x:auto;
+  margin-bottom: 60px;
 }
 
 
 table, th, td {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
 th,td{
 	height: 50px;
-	 text-align: left;
-	 padding: 15px;
-    
+  text-align: left;
+  padding: 15px;
+
 }
 
 tr:hover {background-color: #f5f5f5}
@@ -27,11 +27,11 @@ tr:hover {background-color: #f5f5f5}
 /* Glyph, by Harry Roberts */
 
 hr.style-eight {
-    padding: 0;
-    border: none;
-    border-top: medium double #333;
-    color: #333;
-    text-align: center;
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center;
 }
 
 h2{
@@ -45,3 +45,49 @@ pre{
 ol{
 	margin-left: 0;
 }
+
+
+#div1{
+  display:none;
+}
+
+#div2{
+  height: 80px;
+  display:none;
+  background-color:red;
+}
+
+#div3{
+  display:none;
+  background-color:blue;
+}
+
+#div4{
+  background:#98bf21;
+  height:100px;
+  width:100px;
+  position: fixed;
+}
+
+#button_callback{    /*none*/}
+#callback{
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+
+}
+
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+
+

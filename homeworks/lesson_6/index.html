@@ -3,34 +3,208 @@
 <head>
   <title>JQUERY cheat sheet</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
   <h1>JQUERY CHEAT SHEET</h1>
-  <h2>1 - data types</h2>
-  <p>Just like a language has nouns, verbs, and prepositions, JavaScript has its own building blocks. </p>
-  <p>There are three essential data types</p>
+  <p>jQuery is a powerful and simple JavaScript library that you can use to select elements in your Web page, add impressive special effects, and insert content. Also find great resources for jQuery tips, tutorials, and plug-ins.</p>
+  <h2>1 - call the jquery library</h2>
+  <p>If you don't want to download and host jQuery yourself, you can include it from a CDN (Content Delivery Network).Both Google and Microsoft host jQuery.</p>
+  <p>Many users already have downloaded jQuery from Google or Microsoft when visiting another site. As a result, it will be loaded from cache when they visit your site, which leads to faster loading time. Also, most CDN's will make sure that once a user requests a file from it, it will be served from the server closest to them, which also leads to faster loading time.</p>
   <table>
     <tr>
-      <th>NAME</th>
-      <th>DESCRIPTION</th>
-      <th>EXAMPLE</th>
+      <td>GOOGLE</td>
+      <td><p>Insert the following link to a script tag. src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"</p></td>
     </tr>
     <tr>
-      <td>STRING</td>
-      <td><p>Any grouping of words or numbers surrounded by single quotes</p></td>
-      <td><p>'LOVE' , '5.30 in the afternoon' , 'hello world!'</p></td>
+      <td>MICROSOFT</td>
+      <td><p>Insert the following link to a script tag. src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"</p></td>
     </tr>
     <tr>
-      <td>NUMBER</td>
-      <td><p>Any number, including numbers with decimals, without quotes.</p></td>
-      <td><p>44, 8 . 1367, 23.34 (note the point)</p></td>
+      <td>Functions In a Separate File</td>
+      <td><p>In order for jQuery functions to be easy to maintain accross many pages, put your jQuery functions in a separate .js file in a &lt;script&gt; tag.</p></td>
+    </tr>
+  </table>
+  <hr class="style-eight">
+  <h2>2 - Selecting Elements with jquery.</h2>
+  <p>jQuery allows you to select elements in a Web page. It's based on the existing CSS Selectors, and in addition, it has some own custom selectors.</p>
+  <p>All selectors in jQuery start with the dollar sign and parentheses: $().</p>
+  <p> for a full of jquery selectors, click <a href="http://www.w3schools.com/jquery/jquery_ref_selectors.asp" title="jquery selctors">here</a>.</p>
+  <table>
+    <tr>
+      <th>Elements</th>
+      <th>Entry</th>
     </tr>
     <tr>
-     <td>Boolean</td>
-     <td><p>Boolean: This is always one of two words. Either true or false, with no quotations.</p></td>
-     <td><p>true or false</p></td>
-   </tr>
- </table>
- <hr class="style-eight">
+      <td>Element type (for example, &lt;img&gt;)</td>
+      <td>$(&apos;&apos;img&apos;&apos;)</td>
+    </tr>
+    <tr>
+      <td>All elements</td>
+      <td><p>$(&apos;&apos;*&apos;&apos;)</p></td>
+    </tr>
+    <tr>
+      <td>ID (for example, id=&apos;&apos;thisIsTheID&apos;&apos;)</td>
+      <td><p>$(&apos;&apos;#thisIsTheID&apos;&apos;)</p></td>
+    </tr>
+    <tr>
+      <td>Class (for example, class=&apos;&apos;someClass&apos;&apos;)</td>
+      <td><p>$(&apos;&apos;.someClass&apos;&apos;)</p></td>
+    </tr>
+    <tr>
+      <td>Order (for example, the first or last &lt;img&gt; element)</td>
+      <td><p>$(&apos;&apos;img:first&apos;&apos;)</p><p>$(&apos;&apos;img:last&apos;&apos;)</p>
+      </td>
+    </tr>
+    <tr>
+      <td>Attribute, (for example, to get the length attribute of &lt;img&gt;)</td>
+      <td><p>$(&apos;&apos;img[height]&apos;&apos;).length</p></td>
+    </tr>
+    <tr>
+      <td>Parent (for example, the parent of &lt;div&gt;)</td>
+      <td><p>$(&apos;&apos;div:parent&apos;&apos;)</p></td>
+    </tr>
+    <tr>
+      <td>Child (for example, the first or last child of &lt;div&gt;)</td>
+      <td><p>$(&apos;&apos;div:first-child&apos;&apos;)</p><p>$(&apos;&apos;div:last-child&apos;&apos;)</p></td>
+    </tr>
+    <tr>
+      <td>Selects the current HTML element</td>
+      <td><p>$(this)</p></td>
+    </tr>
+  </table>
+  <hr class="style-eight">
+  <h2>3 - Ready () event.</h2>
+  <p>To run the jquery code as soon as the document is ready to be manipulated.</p>
+  <table>
+    <tr>
+      <td><p>Jquery syntax to use with each method.</p></td>
+      <td>
+        <pre>
+          $(document).ready(function(){
+          ....method will go here.
+        });
+      </pre>
+    </td>
+  </tr>
+  <tr>
+    <td><p>Full syntax with selector</p>
+      <p>When a user clicks on a button, the elements with class="test" will be hidden.</td>
+        <td>
+          <pre>
+            $(document).ready(function(){
+            $("button").click(function(){
+            $("#test").hide();
+          });
+        });
+      </pre>
+    </td>
+    <td>
+      <script>
+      $(document).ready(function(){
+        $("button").click(function(){
+          $(".test").hide();
+        });
+      });
+      </script>
+      <h2 class="test">This is a heading</h2>
+      <p class="test">This is a paragraph.</p>
+      <p>This is another paragraph.</p>
+      <button>Click me</button>
+    </td>
+  </tr>
+</table>
+<hr class="style-eight">
+<h2>5 - working examples</h2>
+<p>To run the jquery code as soon as the document is ready to be manipulated.</p>
+<table>
+  <tr>
+    <td><p>HIDE</p></td>
+    <td>
+     <script>
+     $(document).ready(function(){
+      $("img").click(function(){
+        $(this).hide();
+      });
+    });
+     </script>
+     <p>click on the image it  will disappear.</p>
+     <img src="hi.jpg">
+   </td>
+ </tr>
+ <tr>
+  <td><p>HIDE &amp; SHOW</p>
+  </td>
+  <td>
+    <script>
+    $(document).ready(function(){
+      $("#hide").click(function(){
+        $("#hide").hide();
+      });
+      $("#show").click(function(){
+        $("#hide").show();
+      });
+    });
+  </script><p>If you click on the "Hide" button, I will disappear.</p>
+  <button id="hide">Hide</button>
+  <button id="show">Show</button>
+</td>
+</tr>
+<tr>
+  <td>
+    <p>Demonstrate fadeIn() with different parameters.</p>
+  </td>
+  <td>
+    <script>
+    $(document).ready(function(){
+      $("#button_fadein").click(function(){
+        $("#div1").fadeIn();
+        $("#div2").fadeIn("slow");
+        $("#div3").fadeIn(3000);
+      });
+    });
+    </script>
+    <button id="button_fadein">Click to see fade effect of text, images and background.</button><br><br>
+    <div id="div1"><img src="hi.jpg"></div><br>
+    <div id="div2"><h1>jquery fade in method</h1></div><br>
+    <div id="div3"><img src="hi.jpg"></div>
+  </td>
+</tr>
+<tr>
+  <td>
+    <p>When hide method completes then fire alert.</p>
+  </td>
+  <td>
+    <script>
+    $(document).ready(function(){
+      $("#button_callback").click(function(){
+        $("#callback").hide("slow", function(){
+          alert("The paragraph is now hidden");
+        });
+      });
+    });
+    </script>
+    <button id="button_callback">Hide</button>
+    <p id="callback">This is a paragraph with little content.</p>
+  </td>
+</tr>
+<tr>
+  <td>
+    <p>Toggle() Method</p>
+  </td>
+  <td>
+    <script>
+    $(document).ready(function(){
+      $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+      });
+    });
+    </script>
+    <div id="flip">Click to slide the panel down or up</div>
+    <div id="panel">Hello world!</div>
+  </td>
+</tr>
+</table>
+<hr class="style-eight">
 </body>
 </html>
