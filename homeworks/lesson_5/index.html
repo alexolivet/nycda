@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Javascript cheat sheet</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -51,15 +52,16 @@
     <td><p>We can log multiple things at once by separating them with commas.</p></td>
   </tr>
   <tr>
-   <td><ul>
-    <li>console.log(46+3.5)</li>
-    <li>console.log(2016-1969)</li>
-    <li>console.log(65/240)</li>
-    <li>console.log(0.2708333333333333*100)</li>
+   <td>
     <ul>
-    </td>
-    <td><p>we can extend the use of the console.log entry to make any type of calculation.</p></td>
-  </tr>
+      <li>console.log(46+3.5)</li>
+      <li>console.log(2016-1969)</li>
+      <li>console.log(65/240)</li>
+      <li>console.log(0.2708333333333333*100)</li>
+    </ul>
+  </td>
+  <td><p>we can extend the use of the console.log entry to make any type of calculation.</p></td>
+</tr>
 </table>
 <hr class="style-eight">
 <h2>3 - variables</h2>
@@ -110,7 +112,8 @@
    </pre>
  </td>
  <td>
-  <ul> Variables are useful in two ways:
+  <p>Variables are useful in two ways:</p>
+  <ul> 
     <li>
       they allow us to use the same value over and over, without having to write a string or other data type over and over.
     </li>
@@ -118,7 +121,7 @@
   </ul>
   <p>We can change a variable's value if we want</p>
   <p>We created a variable by using the keyword var and the name weatherCondition.</p>
-</p>Then, we took the existing weatherCondition variable, and set its value equal to 'Tuesday: Sunny'.</p>
+  <p>Then, we took the existing weatherCondition variable, and set its value equal to 'Tuesday: Sunny'.</p>
 </td>
 </tr>
 <tr>
@@ -208,38 +211,37 @@
           document.getElementById("demo").innerHTML = cars[0];
         </pre>
       </td>
+    </tr>
+    <tr>
+     <td><p>Access the Full Array. the full array can be accessed by referring to the array name.</p></td>
+     <td>
+      <pre>var cars = ["Saab", "Volvo", "BMW"];
+        document.getElementById("demo").innerHTML = cars;
+      </pre>
     </td>
   </tr>
   <tr>
-   <td><p>Access the Full Array. the full array can be accessed by referring to the array name.</p></td>
-   <td>
-    <pre>var cars = ["Saab", "Volvo", "BMW"];
-      document.getElementById("demo").innerHTML = cars;
-    </pre>
-  </td>
-</tr>
-<tr>
-  <td><p>Arrays are Objects. Arrays use numbers to access its "elements". use objects when you want the element names to be strings (text). use arrays when you want the element names to be numbers.</p>
-  </td>
-  <td>
-    <p>In this example, person[0] returns John</p>
-    <pre>
-      var person = ["John", "Doe", 46];
-      document.getElementById("demo").innerHTML = person[0];
-    </pre>
-  </td> 
-</tr>
-<tr>
-  <td><p>Arrays are Objects. Objects use names to access its "members".</p>
-  </td>
-  <td>
-    <p>In this example, person.firstName returns John. note the curly brackets</p>
-    <pre>
-      var person = {firstName:"John", lastName:"Doe", age:46};
-      document.getElementById("demo").innerHTML = person["firstName"];
-    </pre>
-  </td> 
-</tr>
+    <td><p>Arrays are Objects. Arrays use numbers to access its "elements". use objects when you want the element names to be strings (text). use arrays when you want the element names to be numbers.</p>
+    </td>
+    <td>
+      <p>In this example, person[0] returns John</p>
+      <pre>
+        var person = ["John", "Doe", 46];
+        document.getElementById("demo").innerHTML = person[0];
+      </pre>
+    </td> 
+  </tr>
+  <tr>
+    <td><p>Arrays are Objects. Objects use names to access its "members".</p>
+    </td>
+    <td>
+      <p>In this example, person.firstName returns John. note the curly brackets</p>
+      <pre>
+        var person = {firstName:"John", lastName:"Doe", age:46};
+        document.getElementById("demo").innerHTML = person["firstName"];
+      </pre>
+    </td> 
+  </tr>
 </table>
 <hr class="style-eight">
 <h2>6 - comments</h2>

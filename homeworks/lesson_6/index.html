@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>JQUERY cheat sheet</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -22,14 +23,15 @@
     </tr>
     <tr>
       <td>Functions In a Separate File</td>
-      <td><p>In order for jQuery functions to be easy to maintain accross many pages, put your jQuery functions in a separate .js file in a &lt;script&gt; tag.</p></td>
+      <td><p>In order for jQuery functions to be easy to maintain accross many pages, put your jQuery functions in a separate .js file in a &lt;script&gt; tag.</p>
+      </td>
     </tr>
   </table>
   <hr class="style-eight">
   <h2>2 - Selecting Elements with jquery.</h2>
   <p>jQuery allows you to select elements in a Web page. It's based on the existing CSS Selectors, and in addition, it has some own custom selectors.</p>
   <p>All selectors in jQuery start with the dollar sign and parentheses: $().</p>
-  <p> for a full of jquery selectors, click <a href="http://www.w3schools.com/jquery/jquery_ref_selectors.asp" title="jquery selctors">here</a>.</p>
+  <p> for a full of jquery selectors,click<a href="http://www.w3schools.com/jquery/jquery_ref_selectors.asp" title="jquery selctors">here</a>.</p>
   <table>
     <tr>
       <th>Elements</th>
@@ -78,6 +80,11 @@
   <p>To run the jquery code as soon as the document is ready to be manipulated.</p>
   <table>
     <tr>
+      <th>&nbsp;</th>
+      <th>&nbsp;</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
       <td><p>Jquery syntax to use with each method.</p></td>
       <td>
         <pre>
@@ -86,33 +93,36 @@
         });
       </pre>
     </td>
+    <td>%nbsp;</td>
   </tr>
   <tr>
-    <td><p>Full syntax with selector</p>
-      <p>When a user clicks on a button, the elements with class="test" will be hidden.</td>
-        <td>
-          <pre>
-            $(document).ready(function(){
-            $("button").click(function(){
-            $("#test").hide();
-          });
-        });
-      </pre>
+    <td>
+      <p>Full syntax with selector</p>
+      <p>When a user clicks on a button, the elements with class="test" will be hidden.</p>
     </td>
     <td>
-      <script>
-      $(document).ready(function(){
+      <pre>
+        $(document).ready(function(){
         $("button").click(function(){
-          $(".test").hide();
-        });
+        $("#test").hide();
       });
-      </script>
-      <h2 class="test">This is a heading</h2>
-      <p class="test">This is a paragraph.</p>
-      <p>This is another paragraph.</p>
-      <button>Click me</button>
-    </td>
-  </tr>
+    });
+  </pre>
+</td>
+<td>
+  <script>
+  $(document).ready(function(){
+    $("button").click(function(){
+      $(".test").hide();
+    });
+  });
+  </script>
+  <h2 class="test">This is a heading</h2>
+  <p class="test">This is a paragraph.</p>
+  <p>This is another paragraph.</p>
+  <button>Click me</button>
+</td>
+</tr>
 </table>
 <hr class="style-eight">
 <h2>5 - working examples</h2>
@@ -129,7 +139,7 @@
     });
      </script>
      <p>click on the image it  will disappear.</p>
-     <img src="hi.jpg">
+     <img src="hi.jpg" alt="jquery cheat sheet">
    </td>
  </tr>
  <tr>
@@ -165,9 +175,9 @@
     });
     </script>
     <button id="button_fadein">Click to see fade effect of text, images and background.</button><br><br>
-    <div id="div1"><img src="hi.jpg"></div><br>
+    <div id="div1"><img src="hi.jpg" alt="jquery cheat sheet"></div><br>
     <div id="div2"><h1>jquery fade in method</h1></div><br>
-    <div id="div3"><img src="hi.jpg"></div>
+    <div id="div3"><img src="hi.jpg" alt="jquery cheat sheet"></div>
   </td>
 </tr>
 <tr>
