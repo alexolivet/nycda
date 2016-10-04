@@ -93,7 +93,7 @@
         });
       </pre>
     </td>
-    <td>%nbsp;</td>
+    <td>&nbsp;</td>
   </tr>
   <tr>
     <td>
@@ -125,7 +125,7 @@
 </tr>
 </table>
 <hr class="style-eight">
-<h2>5 - working examples</h2>
+<h2>4 - working examples</h2>
 <p>To run the jquery code as soon as the document is ready to be manipulated.</p>
 <table>
   <tr>
@@ -212,6 +212,48 @@
     </script>
     <div id="flip">Click to slide the panel down or up</div>
     <div id="panel">Hello world!</div>
+  </td>
+</tr>
+<tr>
+  <td><p>Demonstrates the jQuery hover() event.</p></td>
+  <td>
+    <p>hover on the below paragraph to test the hover effect.</p>
+    <script>
+    $(document).ready(function(){
+      $("#p1").hover(function(){
+        alert("You entered p1!");
+      },
+      function(){
+        alert("Bye! You now leave p1!");
+      });
+    });
+    </script>
+    <p id="p1">hover on me and check the effect</p>
+  </td>
+</tr>
+<tr>
+  <td>Append text method</td>
+  <td>
+    <script>
+    $(document).ready(function(){
+      $("#btn1").click(function(){
+        $(".p1").append(" <b>Appended text</b>.");
+      });
+
+      $("#btn2").click(function(){
+        $("ol").append("<li>Appended item</li>");
+      });
+    });
+    </script>
+    <p class="p1">This is a paragraph.</p>
+    <p class="p1">This is another paragraph.</p>
+    <ol>
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+    </ol>
+    <button id="btn1">Append text</button>
+    <button id="btn2">Append list items</button>
   </td>
 </tr>
 </table>
