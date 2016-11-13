@@ -1,0 +1,254 @@
+@import 'reset';
+
+//colors
+$lime: #b0eb00;
+$bright-red: #b30015;
+$dark-blue: #2a00b3;
+$deep-cerulean: #0077b3;
+$bondi-blue: #00b0b3;
+$cyan: #24fbff;
+$heliotrope: #8a7dff;
+$silver-chalice: #a6a6a6;
+$scorpion: #595959;
+$tundora: #444;
+$mine-shaft: #363636;
+$cod-gray: #111;
+$white: #FFFFFF ;
+$ghost: #FAFAFA ;
+$snow: #F9F9F9 ;
+$vapor: #F6F6F6;
+$white-smoke: #F5F5F5 ;
+$silver: #EFEFEF ;
+$smoke : #EEEEEE ;
+$gainsboro: #DDDDDD ;
+$iron : #CCCCCC ;
+$base : #AAAAAA ;
+$aluminum: #999999 ;
+$jumbo: #888888 ;
+$monsoon: #777777 ;
+$steel: #666666 ;
+$charcoal : #555555 ;
+$tuatara: #444444 ;
+$oil: #333333 ;
+$jet: #222222 ;
+$black: #000000 ;
+
+// mixin for line height
+//fallback for old browsers
+@mixin line-height($heightValue: 12) {
+  line-height: $heightValue + px; 
+  line-height: (0.125 * $heightValue) + rem;
+}
+
+//mixin for font-size
+//fallback for old browsers
+@mixin font-size($sizeValue: 12) {
+  font-size: $sizeValue + px; 
+  font-size: (0.125 * $sizeValue) + rem;
+}
+
+//Visually hide an element
+//equivallent to display:none
+//technique for hiding elements while at the same time make them accessible.
+//this uses a placholder selector
+%hidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+//usage: this class sets items to hidden
+.hidden {
+  @extend %hidden;
+}
+
+// useful HTML classes
+.left   { float: left !important; }
+.right  { float: right !important; }
+
+
+//media queries
+$mq-840: "(max-width: 840px)";
+$mq-640: "(max-width: 640px)";
+
+//body styling
+body {
+  margin: 0;
+  padding: 0;
+  @include line-height (11);
+  a{
+    text-decoration: none;
+  }
+}
+
+//text styling
+
+p {
+  color: darken($cod-gray, 15);
+  @media #{$mq-840} {
+    @include line-height (15);
+  }
+
+}
+
+em {
+  color: lighten($bright-red, 7);
+}
+
+img {
+  float: left;
+  width: 45%;
+  height: auto;
+}
+
+//header
+header {
+  background:lighten($cod-gray, 70);
+  height: 90px;
+  //nav menu
+  nav {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    li {
+      float: left;
+      a {
+        display: inline-block;
+        color: lighten($lime, 50);
+        text-align: center;
+        padding: 12px 19px;
+        @include font-size(12);
+        &:hover {
+          background-color: lighten($cod-gray,80);
+
+        }
+        @media #{$mq-840} {
+         padding: 10px;
+         margin-top:10px;
+         width: 100%;
+         padding: 12px 20px;
+         @include font-size(10);
+         &:hover {
+           background-color: lighten($cod-gray, 70);
+
+         }
+       }
+     }
+   }
+ }
+}
+
+
+//main layout
+#contentwrapper {
+  float: left;
+  width: 100%;
+}
+
+
+//mixin for columns changing throught different pages
+@mixin content-area() {
+  margin-top: 0;
+  margin-bottom: 0;
+  @media #{$mq-840} {
+    margin-right: 0;
+  }
+  @media #{$mq-640} {
+    margin-left: 0;
+  }
+}
+
+#contentcolumn  {
+  margin-left: 230px;
+  margin-right: 200px;
+  @include content-area;
+
+}
+
+#second_contentcolumn {
+  margin-left: 0;
+  margin-left: 230px;
+  @include content-area;
+
+}
+
+#third_contentcolumn {
+  margin-right: 0;
+  margin-left: 0;
+  @include content-area;
+
+}
+
+#leftcolumn {
+  float: left;
+  height: auto;
+  width: 230px;
+  margin-left: -100%;
+  background: lighten($heliotrope, 10);
+  @media #{$mq-840} {
+    margin-left: -100%;
+  }
+  @media #{$mq-640} {
+    float: none;
+    width: 100%;
+    clear: both;
+    margin-left: 0;
+  }
+}
+
+#rightcolumn {
+  float: left;
+  width: 200px;
+  margin-left: -200px;
+  background: lighten($bright-red, 30);
+  @media #{$mq-840} {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    clear: both;
+  }
+}
+
+//footer
+footer {
+  clear: left;
+  width: 100%;
+  background: $bright-red;
+  text-align: center;
+  padding-top:4px;
+  padding-bottom:4px;
+  a {
+    color: lighten($lime, 10);
+  }
+}
+
+//sets inner margin
+.inner_margin {
+ margin-left: 10px; 
+ margin-right:10px;
+ margin-bottom:10px;
+ margin-top: 0;
+ padding-top:10px;
+ text-align: center;
+ b {
+  @include font-size(14);
+  
+}
+img {
+  float: left;
+  width: 40%;
+  height: auto;
+}
+}
+
+
+
+
